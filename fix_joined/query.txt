@@ -1,0 +1,16 @@
+SELECT 
+	lg.id,
+	title,
+	platform,
+	release_date,
+	genre,
+	publisher,
+	rating,
+	metascore,
+	metascore_review,
+	userscore,
+	userscore_review,
+	is_online
+FROM list_game as lg 
+JOIN detail_game as dg 
+ON lg.id=dg.id;
